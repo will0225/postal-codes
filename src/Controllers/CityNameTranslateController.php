@@ -34,7 +34,8 @@ class CityNameTranslateController extends BaseController
         ]);
         $url = '/v1/chat/completions';
         
-        $apiKey = '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';
+        $apiKey = env("openaikey", null);
+        
         $response = $client->post($url, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $apiKey,
