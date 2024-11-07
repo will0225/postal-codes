@@ -1,0 +1,17 @@
+{
+    "name": "hoho9155/postal-codes",
+    "autoload": {
+        "psr-4": {
+            "Hoho9155\\PostalCodes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "barbara prim",
+            "email": "kjm729@tutamail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    }
+}
