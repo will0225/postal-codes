@@ -31,7 +31,7 @@ class CategoryTranslateController extends BaseController
         ]);
         $url = '/v1/chat/completions';
         
-        $apiKey = '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';
+        $apiKey = env("openaikey", null);
         $response = $client->post($url, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $apiKey,
